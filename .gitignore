@@ -1,0 +1,6 @@
+trust-inventory
+trust-inventory.exe
+*.test
+*.out
+reports/
+dist/
