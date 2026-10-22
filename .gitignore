@@ -1,5 +1,5 @@
-trust-inventory
-trust-inventory.exe
+/trust-inventory
+/trust-inventory.exe
 *.test
 *.out
 reports/

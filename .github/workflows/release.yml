@@ -43,7 +43,7 @@ jobs:
           GOOS: ${{ matrix.goos }}
           GOARCH: ${{ matrix.goarch }}
           CGO_ENABLED: "0"
-        run: go build -trimpath -ldflags="-s -w" -o "dist/${{ matrix.output }}" .
+        run: go build -trimpath -ldflags="-s -w" -o "dist/${{ matrix.output }}" ./cmd/trust-inventory
       - uses: actions/upload-artifact@v4
         with:
           name: ${{ matrix.output }}

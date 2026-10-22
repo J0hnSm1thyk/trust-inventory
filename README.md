@@ -14,6 +14,11 @@
 
 pip、certifi、uv、Conda、Poetry、Node.js、npm、Yarn、pnpm、Go、Java、Rust、Cargo、Composer、RubyGems、Homebrew、WinGet、Chocolatey、Scoop、curl、Git、OpenSSLなど。
 
+## ディレクトリ構成
+
+- `cmd/trust-inventory/`: CLIの実装と単体テスト
+- `.github/workflows/`: 自動テストとRelease作成
+
 ## Goのインストール
 
 [Releases](https://github.com/J0hnSm1thyk/trust-inventory/releases)のビルド済みバイナリを使う場合、Goのインストールは不要です。ソースからビルドする場合のみ、Go 1.27.3以降をインストールしてください。
@@ -36,7 +41,7 @@ go version
 
 ```sh
 go test ./...
-go build -trimpath .
+go build -trimpath ./cmd/trust-inventory
 ```
 
 ## 使い方
