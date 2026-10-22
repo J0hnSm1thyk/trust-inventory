@@ -14,6 +14,22 @@
 
 pip、certifi、uv、Conda、Poetry、Node.js、npm、Yarn、pnpm、Go、Java、Rust、Cargo、Composer、RubyGems、Homebrew、WinGet、Chocolatey、Scoop、curl、Git、OpenSSLなど。
 
+## Goのインストール
+
+[Releases](https://github.com/J0hnSm1thyk/trust-inventory/releases)のビルド済みバイナリを使う場合、Goのインストールは不要です。ソースからビルドする場合のみ、Go 1.27.3以降をインストールしてください。
+
+公式の[Goダウンロードページ](https://go.dev/dl/)から、使用中のOSとCPUに合うファイルを取得します。
+
+- Windows: `.msi`を実行し、画面の案内に従います。完了後にターミナルを開き直します。
+- macOS: `.pkg`を実行し、画面の案内に従います。完了後にターミナルを開き直します。
+- Linux: 公式の[インストール手順](https://go.dev/doc/install)に従ってアーカイブを`/usr/local/go`へ展開し、`/usr/local/go/bin`を`PATH`へ追加します。既存のGoディレクトリへ上書き展開しないでください。
+
+インストール後、次のコマンドで確認します。
+
+```sh
+go version
+```
+
 ## ビルド
 
 今回のGo証明書修正を含めるため、Go 1.27.3以降を使用してください。
