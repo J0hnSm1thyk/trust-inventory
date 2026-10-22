@@ -38,6 +38,8 @@ go build -trimpath .
 
 Windowsでは実行ファイル名が`trust-inventory.exe`になります。
 
+ビルド済みバイナリは[Releases](https://github.com/J0hnSm1thyk/trust-inventory/releases)から取得できます。バイナリは未署名のため、OSの警告が表示される場合があります。同梱の`SHA256SUMS.txt`で整合性を確認してください。
+
 ### 接続検査
 
 次のオプションを指定した場合のみ、公開されているeMudhraテストホストへ接続します。
